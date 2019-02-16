@@ -59,5 +59,16 @@
 		</plugins>
 		<finalName>docker-spring-boot</finalName>
 	</build>
-
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<name>nexus-releases</name>
+			<url>http://localhost:8081/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>nexus-snapshots</name>
+			<url>http://localhost:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
